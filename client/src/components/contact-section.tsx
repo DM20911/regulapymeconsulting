@@ -66,7 +66,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-playfair font-bold text-3xl lg:text-4xl mb-6">
-              <span className="text-white">Comience Hoy su</span>{" "}
+              <span style={{color: 'white'}}>Comience Hoy su</span>{" "}
               <span className="text-gold-500">Proyecto Empresarial</span>
             </h2>
 

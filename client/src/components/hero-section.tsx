@@ -28,8 +28,8 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-playfair font-bold text-4xl lg:text-5xl mb-6 leading-tight text-white">
-              Creación, Formalización y Modificación de{" "}
+            <h1 className="font-playfair font-bold text-4xl lg:text-5xl mb-6 leading-tight">
+              <span style={{color: 'white'}}>Creación, Formalización y Modificación de</span>{" "}
               <span className="text-gold-500">Empresas</span>
             </h1>
             <p className="text-xl mb-8 text-blue-100 leading-relaxed">
