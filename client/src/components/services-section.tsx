@@ -114,38 +114,51 @@ export default function ServicesSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-8">
           {services.map((service, index) => (
             <motion.div
               key={service.title}
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-200 relative"
+              className="bg-white rounded-xl p-8 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-16 h-16 bg-blue-800 rounded-lg flex items-center justify-center mb-6">
-                <service.icon className="text-white h-8 w-8" />
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div className="lg:col-span-1">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 bg-blue-800 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <service.icon className="text-white h-8 w-8" />
+                    </div>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h3 className="font-playfair font-semibold text-xl text-blue-900">
+                          {service.title}
+                        </h3>
+                        <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                          {service.price}
+                        </span>
+                      </div>
+                      <p className="text-gray-600 text-sm">{service.description}</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="lg:col-span-2">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {service.features.map((feature) => (
+                      <div key={feature} className="flex items-start space-x-2">
+                        <Check className="text-green-500 h-4 w-4 mt-0.5 flex-shrink-0" />
+                        <span className="text-gray-700 text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="mt-6">
+                    <button className="bg-blue-800 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
+                      Solicitar Cotización
+                    </button>
+                  </div>
+                </div>
               </div>
-              <div className="absolute top-6 right-6">
-                <span className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                  {service.price}
-                </span>
-              </div>
-              <h3 className="font-playfair font-semibold text-xl text-blue-900 mb-4 pr-20">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 mb-6">{service.description}</p>
-              <ul className="text-sm text-gray-600 space-y-2 mb-6">
-                {service.features.map((feature) => (
-                  <li key={feature} className="flex items-center">
-                    <Check className="text-green-500 h-4 w-4 mr-2 flex-shrink-0" />
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-              <button className="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
-                Solicitar Cotización
-              </button>
             </motion.div>
           ))}
         </div>

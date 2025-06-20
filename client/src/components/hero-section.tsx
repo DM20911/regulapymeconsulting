@@ -38,7 +38,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection("contacto")}
-                className="bg-gold-500 text-white px-8 py-4 hover:bg-gold-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
                 size="lg"
               >
                 Consulta Gratuita
