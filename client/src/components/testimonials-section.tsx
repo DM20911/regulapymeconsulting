@@ -5,11 +5,11 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "María Rodríguez",
-    position: "CEO, TechStart SpA",
+    name: "Diego Muñoz",
+    position: "CEO, SBC Ltda.",
     content:
-      "Excelente servicio, nos ayudaron a constituir nuestra empresa en tiempo récord. El proceso fue transparente y profesional desde el primer día.",
-    initials: "MR",
+      "El proceso fue increíblemente eficiente. En menos de una semana teníamos nuestra SpA constituida y todos los documentos en orden. El equipo nos guió en cada paso.",
+    initials: "DM",
   },
   {
     name: "Carlos González",
