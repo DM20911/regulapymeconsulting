@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
               className="bg-white rounded-xl p-6 shadow-lg border border-gray-200"
             >
               <div className="flex items-center mb-4">
-                <div className="flex text-gold-500">
+                <div className="flex text-orange-500">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}

@@ -18,9 +18,10 @@ export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 text-white"
+      className="relative min-h-screen flex items-center justify-center text-white bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
     >
-      <div className="max-w-6xl mx-auto px-4 py-20">
+      <div className="absolute inset-0 bg-black bg-opacity-20"></div>
+      <div className="relative max-w-6xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

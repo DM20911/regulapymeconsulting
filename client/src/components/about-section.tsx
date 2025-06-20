@@ -30,7 +30,7 @@ export default function AboutSection() {
           >
             <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-blue-900 mb-6">
               Más de 15 Años de{" "}
-              <span className="text-gold-500">Excelencia Legal</span>
+              <span className="text-orange-500">Excelencia Legal</span>
             </h2>
 
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
