@@ -38,7 +38,7 @@ export default function Navigation() {
           <div className="flex items-center space-x-2">
             <Scale className="text-navy-900 h-8 w-8" />
             <span className="font-playfair font-bold text-xl text-navy-900">
-              LegalPro Consulting
+              Alpha Consulting
             </span>
           </div>
 

@@ -93,7 +93,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-blue-100">contacto@legalproconsulting.cl</div>
+                  <div className="text-blue-100">contacto@alphaconsulting.cl</div>
                 </div>
               </div>
 
