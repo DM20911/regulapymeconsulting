@@ -18,7 +18,7 @@ export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="pt-20 bg-gradient-to-br from-navy-900 via-navy-700 to-navy-500 text-white"
+      className="pt-20 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 text-white"
     >
       <div className="max-w-6xl mx-auto px-4 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -46,7 +46,7 @@ export default function HeroSection() {
               <Button
                 onClick={() => scrollToSection("servicios")}
                 variant="outline"
-                className="border-2 border-white text-white px-8 py-4 hover:bg-white hover:text-navy-900 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-4 hover:bg-white hover:text-blue-900 transition-all duration-300"
                 size="lg"
               >
                 Ver Servicios

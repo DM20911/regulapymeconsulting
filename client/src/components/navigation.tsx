@@ -36,8 +36,8 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center space-x-2">
-            <Scale className="text-navy-900 h-8 w-8" />
-            <span className="font-playfair font-bold text-xl text-navy-900">
+            <Scale className="text-blue-900 h-8 w-8" />
+            <span className="font-playfair font-bold text-xl text-blue-900">
               Alpha Consulting
             </span>
           </div>
@@ -46,25 +46,25 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-gray-700 hover:text-navy-900 transition-colors duration-300"
+              className="text-gray-700 hover:text-blue-900 transition-colors duration-300"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection("servicios")}
-              className="text-gray-700 hover:text-navy-900 transition-colors duration-300"
+              className="text-gray-700 hover:text-blue-900 transition-colors duration-300"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection("precios")}
-              className="text-gray-700 hover:text-navy-900 transition-colors duration-300"
+              className="text-gray-700 hover:text-blue-900 transition-colors duration-300"
             >
               Precios
             </button>
             <button
               onClick={() => scrollToSection("nosotros")}
-              className="text-gray-700 hover:text-navy-900 transition-colors duration-300"
+              className="text-gray-700 hover:text-blue-900 transition-colors duration-300"
             >
               Nosotros
             </button>
@@ -82,7 +82,7 @@ export default function Navigation() {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-navy-900"
+              className="text-gray-700 hover:text-blue-900"
             >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
