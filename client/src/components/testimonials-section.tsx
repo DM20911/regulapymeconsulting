@@ -8,7 +8,7 @@ const testimonials = [
     name: "Diego Muñoz",
     position: "CEO, SBC Ltda.",
     content:
-      "El proceso fue increíblemente eficiente. En menos de una semana teníamos nuestra SpA constituida y todos los documentos en orden. El equipo nos guió en cada paso.",
+      "El proceso fue increíblemente eficiente. En menos de una semana teníamos nuestra Ltda, SpA y EIRL constituidas y todos los documentos en orden. El equipo nos guió en cada paso.",
     initials: "DM",
   },
   {
