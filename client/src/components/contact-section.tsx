@@ -57,7 +57,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contacto" className="py-20 bg-navy-900 text-white" ref={ref}>
+    <section id="contacto" className="py-20 bg-blue-800 text-white" ref={ref}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <motion.div
@@ -133,7 +133,7 @@ export default function ContactSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-white rounded-xl p-8 text-gray-900">
-              <h3 className="font-playfair font-semibold text-2xl text-navy-900 mb-6">
+              <h3 className="font-playfair font-semibold text-2xl text-blue-900 mb-6">
                 Solicite su Consulta Gratuita
               </h3>
 
