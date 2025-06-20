@@ -40,7 +40,7 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-blue-900 mb-4">
+          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-navy-900 mb-4">
             Lo Que Dicen Nuestros Clientes
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
               className="bg-white rounded-xl p-6 shadow-lg border border-gray-200"
             >
               <div className="flex items-center mb-4">
-                <div className="flex text-orange-500">
+                <div className="flex text-gold-500">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} className="h-4 w-4 fill-current" />
                   ))}
@@ -67,13 +67,13 @@ export default function TestimonialsSection() {
               </div>
               <p className="text-gray-600 mb-4 italic">"{testimonial.content}"</p>
               <div className="flex items-center">
-                <div className="w-10 h-10 bg-blue-800 rounded-full flex items-center justify-center mr-3">
+                <div className="w-10 h-10 bg-navy-900 rounded-full flex items-center justify-center mr-3">
                   <span className="text-white font-semibold text-sm">
                     {testimonial.initials}
                   </span>
                 </div>
                 <div>
-                  <div className="font-semibold text-blue-900">
+                  <div className="font-semibold text-navy-900">
                     {testimonial.name}
                   </div>
                   <div className="text-sm text-gray-600">

@@ -103,7 +103,7 @@ export default function AdditionalServicesSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-blue-900 mb-4">
+          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-navy-900 mb-4">
             Servicios Adicionales Especializados
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -121,19 +121,19 @@ export default function AdditionalServicesSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-all duration-300"
             >
-              <div className="w-12 h-12 bg-blue-800 rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-navy-900 rounded-lg flex items-center justify-center mb-4">
                 <service.icon className="text-white h-6 w-6" />
               </div>
-              <h3 className="font-playfair font-semibold text-lg text-blue-900 mb-2">
+              <h3 className="font-playfair font-semibold text-lg text-navy-900 mb-2">
                 {service.title}
               </h3>
-              <div className="text-orange-600 font-bold text-lg mb-4">
+              <div className="text-gold-600 font-bold text-lg mb-4">
                 {service.price}
               </div>
               <ul className="text-sm text-gray-600 space-y-1">
                 {service.items.map((item) => (
                   <li key={item} className="flex items-start">
-                    <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
+                    <div className="w-1.5 h-1.5 bg-gold-500 rounded-full mt-2 mr-2 flex-shrink-0"></div>
                     {item}
                   </li>
                 ))}
@@ -146,7 +146,7 @@ export default function AdditionalServicesSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.5 }}
-          className="bg-blue-800 rounded-2xl p-8 text-white"
+          className="bg-navy-900 rounded-2xl p-8 text-white"
         >
           <div className="text-center mb-8">
             <h3 className="font-playfair font-bold text-2xl lg:text-3xl mb-4">
@@ -166,7 +166,7 @@ export default function AdditionalServicesSection() {
                 transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gold-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <benefit.icon className="text-white h-8 w-8" />
                 </div>
                 <h4 className="font-semibold text-lg mb-2">{benefit.title}</h4>
