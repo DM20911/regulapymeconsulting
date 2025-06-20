@@ -84,13 +84,15 @@ The application uses a PostgreSQL database with the following schema:
 - **Production**: Compiled JavaScript execution
 - **Database**: Requires `DATABASE_URL` environment variable
 
-## Changelog
+## Recent Changes
 
-```
-Changelog:
-- June 20, 2025. Initial setup
-- June 20, 2025. Added PostgreSQL database integration with Drizzle ORM
-```
+- **June 20, 2025**: Initial setup and PostgreSQL database integration
+- **June 20, 2025**: Restored blue color scheme throughout all components
+- **June 20, 2025**: Updated service layout to individual cards (one below another)
+- **June 20, 2025**: Added WhatsApp contact button in navigation
+- **June 20, 2025**: Changed main CTA button to orange color
+- **June 20, 2025**: Added email notification system with SendGrid integration
+- **June 20, 2025**: Improved text contrast (blue/black text on white backgrounds)
 
 ## User Preferences
 

@@ -102,7 +102,7 @@ export default function PricingSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`rounded-xl p-8 shadow-lg border-2 hover:shadow-xl transition-all duration-300 relative ${
                 plan.popular
-                  ? "bg-blue-800 border-gold-500 text-white"
+                  ? "bg-blue-800 border-orange-500 text-white"
                   : "bg-white border-gray-200"
               }`}
             >
@@ -170,7 +170,7 @@ export default function PricingSection() {
               <Button
                 className={`w-full py-3 font-semibold transition-colors duration-300 ${
                   plan.popular
-                    ? "bg-gold-500 text-white hover:bg-gold-600"
+                    ? "bg-orange-500 text-white hover:bg-orange-600"
                     : plan.name === "Sociedades por Acciones (SpA)"
                     ? "bg-blue-800 text-white hover:bg-blue-700"
                     : "bg-blue-600 text-white hover:bg-blue-700"

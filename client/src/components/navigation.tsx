@@ -68,12 +68,14 @@ export default function Navigation() {
             >
               Nosotros
             </button>
-            <Button
-              onClick={() => scrollToSection("contacto")}
-              className="bg-gold-500 text-white px-6 py-2 hover:bg-gold-600 transition-colors duration-300"
+            <a
+              href="https://wa.me/56223456789?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios%20legales"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-6 py-2 rounded-lg hover:bg-green-600 transition-colors duration-300 font-semibold"
             >
-              Contactar
-            </Button>
+              Contáctanos
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
