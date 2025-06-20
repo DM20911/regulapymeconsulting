@@ -37,7 +37,7 @@ The application uses a PostgreSQL database with the following schema:
 
 ### Backend Services
 1. **Contact Management**: API endpoints for handling client inquiries
-2. **Data Storage**: Abstracted storage layer with both in-memory and database implementations
+2. **Database Storage**: PostgreSQL database with Drizzle ORM for persistent data storage
 3. **Request Logging**: Middleware for API request monitoring
 
 ### Shared Resources
@@ -89,6 +89,7 @@ The application uses a PostgreSQL database with the following schema:
 ```
 Changelog:
 - June 20, 2025. Initial setup
+- June 20, 2025. Added PostgreSQL database integration with Drizzle ORM
 ```
 
 ## User Preferences
