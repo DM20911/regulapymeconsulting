@@ -123,7 +123,7 @@ export default function ServicesSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-200 relative"
             >
-              <div className="w-16 h-16 bg-navy-900 rounded-lg flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-blue-800 rounded-lg flex items-center justify-center mb-6">
                 <service.icon className="text-white h-8 w-8" />
               </div>
               <div className="absolute top-6 right-6">
@@ -131,7 +131,7 @@ export default function ServicesSection() {
                   {service.price}
                 </span>
               </div>
-              <h3 className="font-playfair font-semibold text-xl text-navy-900 mb-4 pr-20">
+              <h3 className="font-playfair font-semibold text-xl text-blue-900 mb-4 pr-20">
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
@@ -143,7 +143,7 @@ export default function ServicesSection() {
                   </li>
                 ))}
               </ul>
-              <button className="w-full bg-navy-900 text-white py-3 rounded-lg hover:bg-navy-700 transition-colors duration-300 font-semibold">
+              <button className="w-full bg-blue-800 text-white py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 font-semibold">
                 Solicitar Cotización
               </button>
             </motion.div>
