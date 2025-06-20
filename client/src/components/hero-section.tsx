@@ -18,7 +18,7 @@ export default function HeroSection() {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center text-white bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700"
+      className="relative min-h-screen flex items-center justify-center text-white bg-gradient-to-br from-navy-900 via-navy-800 to-navy-700"
     >
       <div className="absolute inset-0 bg-black bg-opacity-20"></div>
       <div className="relative max-w-6xl mx-auto px-4 py-20">
@@ -39,7 +39,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 onClick={() => scrollToSection("contacto")}
-                className="bg-orange-500 text-white px-8 py-4 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                className="bg-gold-500 text-navy-900 px-8 py-4 hover:bg-gold-600 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
                 size="lg"
               >
                 Consulta Gratuita
@@ -47,7 +47,7 @@ export default function HeroSection() {
               <Button
                 onClick={() => scrollToSection("servicios")}
                 variant="outline"
-                className="border-2 border-white text-white px-8 py-4 hover:bg-white hover:text-blue-900 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-4 hover:bg-white hover:text-navy-900 transition-all duration-300"
                 size="lg"
               >
                 Ver Servicios

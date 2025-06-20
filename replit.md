@@ -1,8 +1,8 @@
-# LegalPro Consulting - Professional Legal Services Platform
+# RegulaPyme Consulting SpA - Professional Legal Services Platform
 
 ## Overview
 
-This is a modern full-stack web application for LegalPro Consulting, a legal services company specializing in business formation, corporate legal services, and compliance. The platform serves as a professional website showcasing their services and allowing potential clients to submit contact inquiries.
+This is a modern full-stack web application for RegulaPyme Consulting SpA, a legal services company specializing in business formation, corporate legal services, and compliance. The platform serves as a professional website showcasing their services and allowing potential clients to submit contact inquiries.
 
 ## System Architecture
 

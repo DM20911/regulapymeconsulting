@@ -84,7 +84,7 @@ export default function PricingSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-blue-900 mb-4">
+          <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-navy-900 mb-4">
             Precios y Ofertas Especiales
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -102,14 +102,14 @@ export default function PricingSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`rounded-xl p-8 shadow-lg border-2 hover:shadow-xl transition-all duration-300 relative ${
                 plan.popular
-                  ? "bg-blue-800 border-orange-500 text-white"
+                  ? "bg-navy-900 border-gold-500 text-white"
                   : "bg-white border-gray-200"
               }`}
             >
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-orange-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                    Más Popular
+                  <span className="bg-gold-500 text-white px-4 py-1 rounded-full text-sm font-bold">
+                    MÁS POPULAR
                   </span>
                 </div>
               )}
@@ -117,7 +117,7 @@ export default function PricingSection() {
               <div className="text-center mb-6">
                 <h3
                   className={`font-playfair font-semibold text-lg mb-2 leading-tight ${
-                    plan.popular ? "text-white" : "text-blue-900"
+                    plan.popular ? "text-white" : "text-navy-900"
                   }`}
                 >
                   {plan.name}
@@ -132,7 +132,7 @@ export default function PricingSection() {
                 <div className="mb-2">
                   <div
                     className={`text-3xl font-bold ${
-                      plan.popular ? "text-white" : "text-blue-900"
+                      plan.popular ? "text-white" : "text-navy-900"
                     }`}
                   >
                     {plan.price}
@@ -170,10 +170,10 @@ export default function PricingSection() {
               <Button
                 className={`w-full py-3 font-semibold transition-colors duration-300 ${
                   plan.popular
-                    ? "bg-orange-500 text-white hover:bg-orange-600"
-                    : plan.name === "Sociedades por Acciones (SpA)"
-                    ? "bg-blue-800 text-white hover:bg-blue-700"
-                    : "bg-blue-600 text-white hover:bg-blue-700"
+                    ? "bg-gold-500 text-white hover:bg-gold-600"
+                    : plan.name === "Plan Empresarial"
+                    ? "bg-navy-900 text-white hover:bg-navy-700"
+                    : "bg-gray-200 text-gray-700 hover:bg-gray-300"
                 }`}
               >
                 Elegir Plan
