@@ -65,8 +65,8 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-playfair font-bold text-3xl lg:text-4xl mb-6 text-white">
-              Comience Hoy su{" "}
+            <h2 className="font-playfair font-bold text-3xl lg:text-4xl mb-6">
+              <span className="text-white">Comience Hoy su</span>{" "}
               <span className="text-gold-500">Proyecto Empresarial</span>
             </h2>
 

@@ -28,7 +28,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-playfair font-bold text-4xl lg:text-5xl mb-6 leading-tight">
+            <h1 className="font-playfair font-bold text-4xl lg:text-5xl mb-6 leading-tight text-white">
               Creación, Formalización y Modificación de{" "}
               <span className="text-gold-500">Empresas</span>
             </h1>
