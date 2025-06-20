@@ -28,13 +28,12 @@ export default function HeroSection() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-playfair font-bold text-4xl lg:text-5xl mb-6 leading-tight">
-              Constitución y Formalización de Empresas con{" "}
-              <span className="text-gold-500">Excelencia Legal</span>
+              Creación, Formalización y Modificación de{" "}
+              <span className="text-gold-500">Empresas</span>
             </h1>
             <p className="text-xl mb-8 text-blue-100 leading-relaxed">
-              Más de 15 años brindando servicios profesionales de constitución,
-              formalización y modificación de empresas. Su éxito empresarial es
-              nuestra prioridad.
+              Servicios legales especializados en constitución de sociedades limitadas, 
+              anónimas y por acciones. Más de 1,500 empresas constituidas exitosamente.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button

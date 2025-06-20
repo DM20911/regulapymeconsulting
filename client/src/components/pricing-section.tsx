@@ -6,48 +6,55 @@ import { Check, ArrowRight } from "lucide-react";
 
 const plans = [
   {
-    name: "Plan Básico",
-    description: "Perfecto para startups y pequeñas empresas",
-    price: "$450.000",
+    name: "Sociedades de Responsabilidad Limitada",
+    description: "Ideal para pequeñas y medianas empresas",
+    price: "$350.000",
+    originalPrice: "$450.000",
     currency: "CLP",
     features: [
-      "Constitución de empresa (SRL)",
       "Redacción de escritura pública",
       "Inscripción en Registro de Comercio",
+      "Publicación en Diario Oficial",
       "Obtención de RUT empresarial",
-      "1 consulta gratuita posterior",
+      "Patente comercial",
+      "Asesoría post-constitución (30 días)",
     ],
     popular: false,
+    timeframe: "15-20 días hábiles",
   },
   {
-    name: "Plan Profesional",
-    description: "Ideal para empresas en crecimiento",
-    price: "$750.000",
-    currency: "CLP",
+    name: "Sociedades Anónimas",
+    description: "Para empresas con proyección de crecimiento",
+    price: "$650.000",
+    originalPrice: "$850.000",
+    currency: "CLP", 
     features: [
-      "Todo del Plan Básico",
-      "Constitución SA o SpA",
-      "Estatutos personalizados",
-      "Registro de marca básico",
-      "3 consultas gratuitas posteriores",
-      "Asesoría tributaria inicial",
+      "Estatutos sociales personalizados",
+      "Junta constitutiva",
+      "Inscripciones registrales completas",
+      "Registro en SVS (si aplica)",
+      "Estructura de directorio",
+      "Asesoría corporativa (60 días)",
     ],
     popular: true,
+    timeframe: "20-25 días hábiles",
   },
   {
-    name: "Plan Empresarial",
-    description: "Solución completa para grandes empresas",
-    price: "$1.200.000",
+    name: "Sociedades por Acciones (SpA)",
+    description: "Máxima flexibilidad corporativa",
+    price: "$450.000",
+    originalPrice: "$600.000", 
     currency: "CLP",
     features: [
-      "Todo del Plan Profesional",
-      "Estructuras corporativas complejas",
-      "Due diligence básico",
-      "Programa de compliance inicial",
-      "Consultas ilimitadas (6 meses)",
-      "Soporte prioritario",
+      "Estatutos flexibles y personalizados",
+      "Estructura de capital variable",
+      "Pactos de accionistas",
+      "Gobierno corporativo adaptable",
+      "Inscripciones completas",
+      "Consultoría especializada (45 días)",
     ],
     popular: false,
+    timeframe: "18-22 días hábiles",
   },
 ];
 
@@ -78,11 +85,11 @@ export default function PricingSection() {
           className="text-center mb-16"
         >
           <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-navy-900 mb-4">
-            Planes y Tarifas Transparentes
+            Precios y Ofertas Especiales
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ofrecemos precios competitivos y transparentes para todos nuestros
-            servicios legales. Sin sorpresas, solo excelencia.
+            Tarifas transparentes con descuentos especiales. Todos nuestros servicios incluyen 
+            asesoría legal especializada y garantía de cumplimiento de plazos.
           </p>
         </motion.div>
 
@@ -109,32 +116,41 @@ export default function PricingSection() {
 
               <div className="text-center mb-6">
                 <h3
-                  className={`font-playfair font-semibold text-xl mb-2 ${
+                  className={`font-playfair font-semibold text-lg mb-2 leading-tight ${
                     plan.popular ? "text-white" : "text-navy-900"
                   }`}
                 >
                   {plan.name}
                 </h3>
                 <p
-                  className={`mb-4 ${
+                  className={`mb-4 text-sm ${
                     plan.popular ? "text-blue-200" : "text-gray-600"
                   }`}
                 >
                   {plan.description}
                 </p>
-                <div
-                  className={`text-3xl font-bold ${
-                    plan.popular ? "text-white" : "text-navy-900"
-                  }`}
-                >
-                  {plan.price}{" "}
-                  <span
-                    className={`text-lg font-normal ${
-                      plan.popular ? "text-blue-200" : "text-gray-500"
+                <div className="mb-2">
+                  <div
+                    className={`text-3xl font-bold ${
+                      plan.popular ? "text-white" : "text-navy-900"
                     }`}
                   >
-                    {plan.currency}
-                  </span>
+                    {plan.price}
+                  </div>
+                  <div
+                    className={`text-sm line-through ${
+                      plan.popular ? "text-blue-300" : "text-gray-400"
+                    }`}
+                  >
+                    Antes: {plan.originalPrice}
+                  </div>
+                </div>
+                <div
+                  className={`text-sm font-semibold ${
+                    plan.popular ? "text-gold-300" : "text-gold-600"
+                  }`}
+                >
+                  {plan.timeframe}
                 </div>
               </div>
 

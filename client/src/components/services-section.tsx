@@ -14,68 +14,80 @@ import {
 const services = [
   {
     icon: Building,
-    title: "Constitución de Empresas",
+    title: "Constitución de Sociedades de Responsabilidad Limitada",
     description:
-      "Creación de sociedades limitadas, anónimas y por acciones. Proceso completo desde la redacción de escrituras hasta la inscripción en el Registro de Commerce.",
+      "Servicio completo para la creación de sociedades limitadas, incluyendo redacción de escrituras, inscripciones y trámites legales.",
+    price: "Desde $350.000",
     features: [
-      "Redacción de escrituras",
-      "Inscripción en Registro de Commerce",
-      "Obtención de RUT empresarial",
+      "Redacción de escritura pública",
+      "Inscripción en Registro de Comercio",
+      "Publicación en Diario Oficial",
+      "Obtención de RUT y patente comercial",
     ],
   },
   {
     icon: FileText,
-    title: "Formalización Empresarial",
+    title: "Constitución de Sociedades Anónimas",
     description:
-      "Regularización de empresas existentes, actualización de documentos legales y cumplimiento de normativas vigentes.",
+      "Creación de sociedades anónimas abiertas y cerradas con todos los requisitos legales y documentación completa.",
+    price: "Desde $650.000",
     features: [
-      "Actualización de estatutos",
-      "Regularización tributaria",
-      "Compliance legal",
+      "Estatutos sociales personalizados",
+      "Registro en SVS (si aplica)",
+      "Junta constitutiva",
+      "Inscripciones registrales",
     ],
   },
   {
     icon: Edit,
-    title: "Modificación de Empresas",
+    title: "Constitución de SpA (Sociedades por Acciones)",
     description:
-      "Cambio de razón social, aumento de capital, modificación de objetos sociales y otros cambios corporativos.",
+      "Constitución de SpA con flexibilidad en estructura corporativa y gobierno empresarial adaptado a sus necesidades.",
+    price: "Desde $450.000",
     features: [
-      "Cambio de razón social",
-      "Aumento de capital",
-      "Modificación de estatutos",
+      "Estatutos flexibles",
+      "Estructura de capital variable",
+      "Pactos de accionistas",
+      "Gobierno corporativo",
     ],
   },
   {
     icon: Handshake,
-    title: "Asesoría Corporativa",
+    title: "Modificación de Sociedades",
     description:
-      "Consultoría especializada en derecho corporativo, fusiones, adquisiciones y reestructuraciones empresariales.",
+      "Cambios en la estructura societaria, aumento de capital, cambio de razón social y otras modificaciones.",
+    price: "Desde $250.000",
     features: [
-      "Fusiones y adquisiciones",
-      "Reestructuraciones",
-      "Due diligence",
+      "Reforma de estatutos",
+      "Aumento de capital",
+      "Cambio de razón social",
+      "Modificación de objeto social",
     ],
   },
   {
     icon: Shield,
-    title: "Compliance Legal",
+    title: "Fusión y División de Sociedades",
     description:
-      "Implementación de programas de cumplimiento normativo y prevención de delitos empresariales.",
+      "Procesos de fusión, división y transformación de sociedades con asesoría especializada en reorganizaciones.",
+    price: "Desde $800.000",
     features: [
-      "Programas de compliance",
-      "Auditorías legales",
-      "Capacitación empresarial",
+      "Evaluación de activos",
+      "Proyecto de fusión/división",
+      "Juntas de accionistas",
+      "Inscripciones y publicaciones",
     ],
   },
   {
     icon: Gavel,
-    title: "Litigios Corporativos",
+    title: "Disolución y Liquidación",
     description:
-      "Representación en conflictos societarios, disputes comerciales y procedimientos administrativos.",
+      "Servicios completos para la disolución y liquidación de sociedades con cumplimiento de todas las obligaciones legales.",
+    price: "Desde $400.000",
     features: [
-      "Litigios societarios",
-      "Arbitraje comercial",
-      "Mediación empresarial",
+      "Proceso de disolución",
+      "Liquidación de activos",
+      "Cancelación de inscripciones",
+      "Cierre tributario",
     ],
   },
 ];
@@ -94,12 +106,11 @@ export default function ServicesSection() {
           className="text-center mb-16"
         >
           <h2 className="font-playfair font-bold text-3xl lg:text-4xl text-navy-900 mb-4">
-            Nuestros Servicios Especializados
+            Servicios de Constitución de Empresas
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ofrecemos soluciones integrales para la constitución, formalización
-            y modificación de empresas, respaldadas por nuestra amplia
-            experiencia legal.
+            Soluciones completas para la creación, formalización y modificación de todo tipo de sociedades comerciales. 
+            Precios transparentes y plazos garantizados.
           </p>
         </motion.div>
 
@@ -110,23 +121,31 @@ export default function ServicesSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-gray-50 rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100"
+              className="bg-white rounded-xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-200 relative"
             >
               <div className="w-16 h-16 bg-navy-900 rounded-lg flex items-center justify-center mb-6">
                 <service.icon className="text-white h-8 w-8" />
               </div>
-              <h3 className="font-playfair font-semibold text-xl text-navy-900 mb-4">
+              <div className="absolute top-6 right-6">
+                <span className="bg-gold-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  {service.price}
+                </span>
+              </div>
+              <h3 className="font-playfair font-semibold text-xl text-navy-900 mb-4 pr-20">
                 {service.title}
               </h3>
               <p className="text-gray-600 mb-6">{service.description}</p>
-              <ul className="text-sm text-gray-600 space-y-2">
+              <ul className="text-sm text-gray-600 space-y-2 mb-6">
                 {service.features.map((feature) => (
                   <li key={feature} className="flex items-center">
-                    <Check className="text-green-500 h-4 w-4 mr-2" />
+                    <Check className="text-green-500 h-4 w-4 mr-2 flex-shrink-0" />
                     {feature}
                   </li>
                 ))}
               </ul>
+              <button className="w-full bg-navy-900 text-white py-3 rounded-lg hover:bg-navy-700 transition-colors duration-300 font-semibold">
+                Solicitar Cotización
+              </button>
             </motion.div>
           ))}
         </div>
