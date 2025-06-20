@@ -87,12 +87,13 @@ The application uses a PostgreSQL database with the following schema:
 ## Recent Changes
 
 - **June 20, 2025**: Initial setup and PostgreSQL database integration
-- **June 20, 2025**: Restored blue color scheme throughout all components
-- **June 20, 2025**: Updated service layout to individual cards (one below another)
+- **June 20, 2025**: Restored original navy-blue and gold color scheme
+- **June 20, 2025**: Changed company name to RegulaPyme Consulting SpA
+- **June 20, 2025**: Updated service layout to original 3-column grid format
 - **June 20, 2025**: Added WhatsApp contact button in navigation
-- **June 20, 2025**: Changed main CTA button to orange color
-- **June 20, 2025**: Added email notification system with SendGrid integration
-- **June 20, 2025**: Improved text contrast (blue/black text on white backgrounds)
+- **June 20, 2025**: Changed CTA button to orange with navy text, secondary button to white with black text
+- **June 20, 2025**: Added email notification system sending to contacto@regulapymeconsulting.cl
+- **June 20, 2025**: Fixed white text visibility issues in contact section
 
 ## User Preferences
 

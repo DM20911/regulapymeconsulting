@@ -65,7 +65,7 @@ export default function ContactSection() {
             animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="font-playfair font-bold text-3xl lg:text-4xl mb-6">
+            <h2 className="font-playfair font-bold text-3xl lg:text-4xl mb-6 text-white">
               Comience Hoy su{" "}
               <span className="text-gold-500">Proyecto Empresarial</span>
             </h2>
@@ -93,7 +93,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <div className="font-semibold">Email</div>
-                  <div className="text-blue-100">contacto@alphaconsulting.cl</div>
+                  <div className="text-blue-100">contacto@regulapymeconsulting.cl</div>
                 </div>
               </div>
 
@@ -277,7 +277,7 @@ export default function ContactSection() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gold-500 text-white py-4 hover:bg-gold-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                    className="w-full bg-orange-500 text-navy-900 py-4 hover:bg-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl font-semibold"
                     size="lg"
                     disabled={contactMutation.isPending}
                   >

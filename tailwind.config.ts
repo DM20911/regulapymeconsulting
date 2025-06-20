@@ -85,6 +85,18 @@ export default {
           800: "rgb(var(--gold-800))",
           900: "rgb(var(--gold-900))",
         },
+        orange: {
+          50: "rgb(var(--orange-50))",
+          100: "rgb(var(--orange-100))",
+          200: "rgb(var(--orange-200))",
+          300: "rgb(var(--orange-300))",
+          400: "rgb(var(--orange-400))",
+          500: "rgb(var(--orange-500))",
+          600: "rgb(var(--orange-600))",
+          700: "rgb(var(--orange-700))",
+          800: "rgb(var(--orange-800))",
+          900: "rgb(var(--orange-900))",
+        },
       },
       keyframes: {
         "accordion-down": {

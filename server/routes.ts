@@ -13,7 +13,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
       const submission = await storage.createContactSubmission(validatedData);
       
       // Send email notification
-      const recipientEmail = process.env.CONTACT_EMAIL || "contacto@legalpro.cl";
+      const recipientEmail = process.env.CONTACT_EMAIL || "contacto@regulapymeconsulting.cl";
       const emailSent = await sendContactFormEmail(validatedData, recipientEmail);
       
       if (!emailSent) {

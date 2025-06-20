@@ -48,7 +48,7 @@ export async function sendContactFormEmail(
   const html = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
       <h2 style="color: #1e3a8a; border-bottom: 2px solid #f97316; padding-bottom: 10px;">
-        Nueva Consulta Legal - LegalPro Consulting
+        Nueva Consulta Legal - RegulaPyme Consulting
       </h2>
       
       <div style="background-color: #f8fafc; padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -72,14 +72,14 @@ export async function sendContactFormEmail(
       
       <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e5e7eb;">
         <p style="color: #6b7280; font-size: 14px;">
-          Este email fue enviado desde el formulario de contacto de LegalPro Consulting
+          Este email fue enviado desde el formulario de contacto de RegulaPyme Consulting
         </p>
       </div>
     </div>
   `;
 
   const text = `
-    Nueva Consulta Legal - LegalPro Consulting
+    Nueva Consulta Legal - RegulaPyme Consulting
     
     Información del Cliente:
     Nombre: ${contactData.nombre}
@@ -94,7 +94,7 @@ export async function sendContactFormEmail(
 
   return await sendEmail({
     to: recipientEmail,
-    from: 'contacto@legalpro.cl', // You'll need to verify this domain with SendGrid
+    from: 'contacto@regulapymeconsulting.cl', // You'll need to verify this domain with SendGrid
     subject,
     text,
     html,
